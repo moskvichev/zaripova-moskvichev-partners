@@ -12,6 +12,44 @@
   font-weight: normal;
   font-style: normal; }
 
+.commercial_proposal {
+  font-size: 14px;
+}
+
+.mb-5 {
+  margin-bottom: 1rem !important
+}
+.advantages__ul {
+  margin-left: 0; 
+  padding-left: 0;
+}
+.advantages__li {
+  list-style-type: none;
+  display: -webkit-box;
+}
+
+.logo-icon-animate {
+  width: 55px;
+  animation-name: rotation;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;  
+}
+
+.logo-icon-animate:hover{
+  animation-duration: 1s;
+  
+}
+
+@keyframes rotation {
+  0% {
+      transform:rotate(0deg);
+  }
+  100% {
+      transform:rotate(360deg);
+  }
+}
+
 .mouse-wrap, .scroll-wrap {
   position: absolute;
   bottom: 50px;
@@ -334,7 +372,7 @@
   .pb_md_py_cover .sub-heading,
   .pb_lg_py_cover .sub-heading,
   .pb_xl_py_cover .sub-heading {
-    font-size: 20px;
+    font-size: 18px;
     color: rgba(255, 255, 255, 0.8);
     max-width: 600px;
     float: left; }
@@ -409,7 +447,7 @@
 .pb_cover_v3,
 .pb_cover_v4 {
   position: relative;
-  height: 95vh; }
+  height: 100vh; }
   @media (max-width: 767px) {
     .pb_cover,
     .pb_cover_v1,
@@ -417,7 +455,7 @@
     .pb_cover_v3,
     .pb_cover_v4 {
       height: inherit;
-      text-align: center !important;
+      /* text-align: center !important; */
       padding: 6em 0; } }
   .pb_cover > .container,
   .pb_cover_v1 > .container,
@@ -490,10 +528,10 @@
   .pb_cover_v2 .heading,
   .pb_cover_v3 .heading,
   .pb_cover_v4 .heading {
-    font-size: 62px;
+    font-size: 48px;
     color: white;
     font-weight: 300;
-    margin-top: 20px;
+    margin-top: 80px;
     margin-bottom: 0px; }
     @media (max-width: 767px) {
       .pb_cover .heading,
@@ -787,6 +825,25 @@ input, select, textarea {
       color: rgba(255, 255, 255, 0.5); }
   .form-control-outline.dark {
     color: #868e96; }
+
+#privacy-policy {
+    width: 11px;
+    height: 11px}
+
+.to-top {
+  right: 60px;
+  position: fixed;
+  top: 550px;
+  opacity: 0;}
+  @media (max-width:500px) {
+    .to-top{display: none}
+  }
+
+
+.topblue {
+  position: absolute;
+  left: 27px;
+  top: 23px;}
 
 .btn:focus, .btn:active {
   -webkit-box-shadow: none !important;

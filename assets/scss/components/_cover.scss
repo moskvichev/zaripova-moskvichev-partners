@@ -117,10 +117,10 @@
 .pb_cover_v4 {
 	@extend .bg_image;
 	position: relative;
-	height: 95vh;
+	height: 100vh;
 	@include media-breakpoint-down(sm) {
 		height: inherit;
-		text-align: center!important;
+		// text-align: center!important;
 		padding: 6em 0;
 	}
 	> .container {
@@ -158,17 +158,17 @@
 		}
 	}
 	.heading {
-		font-size: 62px;
+		font-size: 48px;
 		color: rgba(255,255,255,1);
 		font-weight: 300;
-		margin-top: 20px;
+		margin-top: 80px;
 		margin-bottom: 0px;
 		@include media-breakpoint-down(sm) {
 			font-size: 42px;
 		}
 	}
 	.sub-heading {
-		font-size: 20px;
+		font-size: 18px;
 		color: rgba(255,255,255,.8);
 		max-width: 600px;
 		float: left;

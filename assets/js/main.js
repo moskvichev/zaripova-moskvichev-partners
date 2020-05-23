@@ -210,4 +210,19 @@ $(document).ready(function($) {
 		}
 	}
 	ytpPlayer();
+
+	$('.to-top').click(function(){
+		$('html, body').animate({scrollTop:0}, 'slow');
+	});
+	 
 });
+
+let btnToTop = document.querySelector('.to-top');
+
+function toTop() {
+  if (window.pageYOffset > 200) {
+    btnToTop.style.opacity = '1'
+  } else { btnToTop.style.opacity = '0' }
+}
+
+window.onscroll = toTop;
