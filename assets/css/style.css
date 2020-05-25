@@ -12,9 +12,14 @@
   font-weight: normal;
   font-style: normal; }
 
-.commercial_proposal {
-  font-size: 14px;
+.to-top {
+  cursor: pointer;
 }
+.commercial_proposal {
+  font-size: 14px;}
+  @media (max-width: 768px) {
+    .commercial_proposal{width:80%} 
+  }
 
 .mb-5 {
   margin-bottom: 1rem !important
@@ -448,6 +453,10 @@
 .pb_cover_v4 {
   position: relative;
   height: 100vh; }
+  @media (min-width: 767px) and (max-width: 960px) {
+    .pb_cover_v1 {height: 130vh}
+    .img2 {display: none;}
+  }
   @media (max-width: 767px) {
     .pb_cover,
     .pb_cover_v1,
