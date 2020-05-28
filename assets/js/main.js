@@ -227,9 +227,7 @@ $(document).ready(function($) {
 		$(".pb_contact_details_v1").removeClass("revealator-slideleft");
 		$(".list-inline-item").removeClass("revealator-slideright revealator-slideup revealator-slideleft revealator-delay3");
 		$(".pb_font-14").removeClass("revealator-slideup");
-	}
-
-	// $( '.parallax-layer' ).parallax();
+	};	
 
 	$('.commercial_proposal:eq(0)').hover(function(){
 		$('.logo-icon-animate:eq(0)').css('animation-duration', '1s');
@@ -266,7 +264,6 @@ $(document).ready(function($) {
 	  }, function(){
 		$('.logo-icon-animate:eq(2)').css('animation-duration', '5s');
 	});
-
 	 
 });
 
