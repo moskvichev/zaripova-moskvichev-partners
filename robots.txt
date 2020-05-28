@@ -12,5 +12,5 @@ Disallow: /assets/js/
 Disallow: /assets/css/
 Disallow: /assets/fonts/
 Disallow: /assets/scss/
-Host: http://zaripova-moskvichev-partners.ru/
-Sitemap: http://zaripova-moskvichev-partners.ru/sitemap.xml
+Host: https://zaripova-moskvichev-partners.ru/
+Sitemap: https://zaripova-moskvichev-partners.ru/sitemap.xml
