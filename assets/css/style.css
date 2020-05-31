@@ -7064,7 +7064,18 @@ a.text-navy:focus, a.text-navy:hover {
   src: url("../fonts/fontawesome/fonts/fontawesome-webfont.eot?#iefix&v=4.7.0") format("embedded-opentype"), url("../fonts/fontawesome/fonts/fontawesome-webfont.woff2?v=4.7.0") format("woff2"), url("../fonts/fontawesome/fonts/fontawesome-webfont.woff?v=4.7.0") format("woff"), url("../fonts/fontawesome/fonts/fontawesome-webfont.ttf?v=4.7.0") format("truetype"), url("../fonts/fontawesome/fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular") format("svg");
   font-weight: normal;
   font-style: normal; }
-
+.content-img {
+  width: 550px;
+  float: right;}
+  @media (max-width: 768px) {
+    .content-img{width:100%; float: none;} 
+  }
+#breadcrumbs span {
+  color: #868e96;
+}
+#breadcrumbs span:hover {
+  color: #000000;
+}
 .to-top {
   cursor: pointer;
 }
