@@ -227,6 +227,7 @@ $(document).ready(function($) {
 		$(".pb_contact_details_v1").removeClass("revealator-slideleft");
 		$(".list-inline-item").removeClass("revealator-slideright revealator-slideup revealator-slideleft revealator-delay3");
 		$(".pb_font-14").removeClass("revealator-slideup");
+		$(".content-img").removeClass("revealator-slideleft");
 	};	
 
 	$('.commercial_proposal:eq(0)').hover(function(){
