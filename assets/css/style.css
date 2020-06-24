@@ -7133,6 +7133,18 @@ a.text-navy:focus, a.text-navy:hover {
   }
 }
 
+@keyframes pulse {
+  from {
+    transform: scale(1.05);
+  }
+  50% {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.05);
+  }
+}
+
 .mouse-wrap, .scroll-wrap {
   position: absolute;
   bottom: 50px;

@@ -33,7 +33,7 @@
     <link rel="stylesheet" href="../css/helpers.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/fm.revealator.jquery.css">
-
+    <link rel="stylesheet" href="../css/modal.css">
         <!-- Yandex.Metrika counter -->
     <script type="text/javascript" >
       (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
@@ -83,13 +83,14 @@
     </nav>
     <!-- END nav -->
 
-    <section class="pb_cover_v1 text-left cover-bg-black cover-bg-opacity-4" style="background-image: url(../images/denim1.webp)" id="section-home">
+    <section class="pb_cover_v1 text-left cover-bg-black cover-bg-opacity-4" style="background-image: url(../images/denim1.webp); transform: scale(1);
+    animation: pulse 7s ease-in-out infinite;" id="section-home">
       <div class="container">
         <div class="row align-items-center justify-content-end">
           <div class="col-md-6  order-md-1">
 
             <h2 class="heading mb-3">Зарипова, Москвичев и партнеры</h2>
-            <div class="sub-heading"><p class="mb-5">Юридические услуги в Самаре</p>
+            <div class="sub-heading"><p class="mb-5">Юридическое сопровождение деятельности</p>
             <p><a href="#section-contact" role="button" class="btn smoothscroll pb_outline-light btn-xl pb_font-13 p-4 rounded-0 pb_letter-spacing-2">Консультация</a></p>
             </div>
             
@@ -121,7 +122,7 @@
           <div class="col-md-12">
             <h3>Корпоративное право. Сопровождение деятельности компании и бизнеса.</h3>
             <p>Ведение предпринимательской деятельности сопряжено с постоянной обработкой документов и ведения переговорного процесса.</p>
-            <p>Наша организация оказывает Клиентам следующие виды услуг:</p>
+            <p>Наша организация оказывает Клиентам следующие виды услуг:</p>            
             <ul>
               <li>Подготовка, согласование и сопровождение подписания договоров и соглашений</li>
               <li>Ведение договоров и деловой переписки</li>
@@ -138,6 +139,93 @@
               <li>Содействие в подготовке документов для получения кредитных средств</li>
               <li>Подготовка заключений, экспертиз, документов для участия в торгах</li>
               <li>Консультирование в различных направлениях законодательства с подготовкой письменного ответа</li>
+            </ul>
+            <p></p>
+            <p></p>
+            
+          </div>  
+        </div>
+
+      </div>
+    </section>
+
+    <section class="pb_sm_py_cover text-center cover-bg-black cover-bg-opacity-4" style="background-image: url(../images/corp.webp); transform: scale(1);
+    animation: pulse 7s ease-in-out infinite;">
+      <div class="container">
+
+        <div class="row align-items-center">
+          <div class="col-md-12">
+            <h2 class="heading mb-3 revealator-slideright">Заявка</h2>
+            <p class="sub-heading mb-5 pb_color-light-opacity-8 revealator-slideleft">Отправьте нам заявку с интересующим вас вопросом и через 10 минут БЕСПЛАТНО на нее ответим.</p>
+            <p><a href="" role="button" data-modal="#modal2" class="btn smoothscroll pb_outline-light btn-xl pb_font-13 p-4 rounded-0 pb_letter-spacing-2 modal__trigger revealator-slideup">Отправить</a></p>
+          </div>  
+        </div>
+
+      </div>
+    </section>
+
+     <!-- modal window -->
+     <div id="modal2" class="modal modal--align-top modal__bg" role="dialog" aria-hidden="true">
+      <div class="modal__dialog">
+        <div class="modal__content">
+          <!-- <h1>Big Modal</h1> -->
+          <h3>Форма для отправки</h3>
+          
+            
+              <div class="form-group revealator-slideright revealator-delay1">
+                <label for="name">Ф И О</label>
+                <input type="text" class="form-control p-3 rounded-0" id="name"/>
+              </div>
+            
+              <div class="form-group revealator-slideright revealator-delay2">
+                <label for="email">Email</label>
+                <input type="text" class="form-control p-3 rounded-0" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"/>
+              </div>
+            
+              <div class="form-group revealator-slideright revealator-delay3">
+                <label for="email">Телефон</label>
+                <input type="text" class="form-control p-3 rounded-0" id="phone" pattern="[0-9]{11,}"/>
+              </div>
+            
+            <div class="form-group">
+              <input type="checkbox" id="privacy-policy" checked>Согласен(-на) с <a href="privacy-policy.html">политикой обработки персональных данных</a><br>
+              <input type="submit" class="btn pb_outline-dark pb_font-13 pb_letter-spacing-2 p-3 rounded-0 modal__close" value="Отправить" onclick="sendMail()">
+            </div>
+          
+          <!-- <p>Selfies normcore four dollar toast four loko listicle artisan. Hoodie Marfa authentic, wayfarers church-key tofu Banksy pop-up Kickstarter Brooklyn heirloom swag synth. Echo Park cray synth mixtape. Tofu gastropub squid readymade, trust fund Wes Anderson DIY PBR 8-bit try-hard +1 Shoreditch lo-fi tote bag.</p>
+          <p><img src="http://unsplash.it/600/300" style="max-width: 100%;" alt="" /></p>
+          <p>Mumblecore cred selfies fingerstache. Tousled skateboard plaid lo-fi shabby chic salvia, swag Odd Future Etsy art party Austin cronut. Crucifix whatever Pinterest food truck, pickled viral cray 90's DIY chambray keffiyeh biodiesel Vice blog. Cred meh yr tofu.</p>
+          <p>Mumblecore cred selfies fingerstache. Tousled skateboard plaid lo-fi shabby chic salvia, swag Odd Future Etsy art party Austin cronut. Crucifix whatever Pinterest food truck, pickled viral cray 90's DIY chambray keffiyeh biodiesel Vice blog. Cred meh yr tofu.</p> -->
+          <!-- modal close button -->
+          <a href="" class="modal__close demo-close">
+            <svg class="" viewBox="0 0 24 24"><path d="M19 6.41l-1.41-1.41-5.59 5.59-5.59-5.59-1.41 1.41 5.59 5.59-5.59 5.59 1.41 1.41 5.59-5.59 5.59 5.59 1.41-1.41-5.59-5.59z"/><path d="M0 0h24v24h-24z" fill="none"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- END modal window -->
+
+    <section class="pb_sm_py_cover">
+      <div class="container">
+        
+        <div class="row align-items-center">
+          <div class="col-md-12">
+            <ul>
+              <li>Экспертиза и подготовка гражданских договоров, а также их согласование с контрагентами</li>
+              <li>Экспертиза, составление, анализ трудовых договоров, дополнительных соглашений к трудовому договору</li>
+              <li>Правовой анализ и составление внутренней документации Заказчика (учредительные документы, приказы и т.д.)</li>
+              <li>Предоставление типовых форм, образцов документов</li>
+              <li>Подготовка юридической документации, необходимой Заказчику для участия в переговорах, в том числе на общих собраниях собственников</li>
+              <li>Подготовка и направление претензий контрагентам Заказчика</li>
+              <li>Подготовка и направление мотивированных ответов на претензионные письма контрагентов Заказчика</li>
+              <li>Представление интересов организации в судах судебной системы РФ (во всех инстанциях)</li>
+              <li>Составление информационных писем, запросов и прочая переписка</li>
+              <li>Разработка и подготовка документов правового характера (договоры, протоколы разногласий, дополнительных соглашений, исковые заявления, заявление о банкротстве, заявление о возбуждении исполнительного производства, жалобы на действия судебных приставов-исполнителей и арбитражных управляющих)</li>
+              <li>Ведение арбитражного и гражданского процесса, исполнительного производства, банкротства</li>
+              <li>Устные и письменные консультации Заказчика по вопросам применения действующего законодательства - по рабочим дням с 09:00 и до 18.00 часов – без ограничения по количеству консультаций</li>
+              <li>Предоставление нормативно-правового материала по запросу Заказчика</li>
+              <li>Предоставление типовых форм, образцов документов</li>
+              <li>Проверка контрагентов Заказчика на предмет массовости юридического адреса, учредителей, директора, наличие спора в арбитражном суде, количество возбужденных исполнительных производств, наличие у контрагентов просуженных долгов, участие контрагента в деле о несостоятельности (банкротстве), подготовка юридической документации, необходимой Заказчику для участия в переговорах</li>
             </ul>
             <p></p>
             <p></p>
@@ -250,20 +338,17 @@
     <div id="pb_loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#FDA04F"/></svg></div>
 
 
-    <script src="../js/jquery.min.js"></script>
-    
+    <script src="../js/jquery.min.js"></script>    
     <script src="../js/popper.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
     <script src="../js/slick.min.js"></script>
-
     <script src="../js/jquery.waypoints.min.js"></script>
     <script src="../js/jquery.easing.1.3.js"></script>
-
     <script src="../js/main.js"></script>
     <script src="../js/sendmail.js"></script>
     <script src="../js/fm.revealator.jquery.js"></script>
     <script src="../js/smtp.js"></script>
     <script src="../js/fm.revealator.jquery.js"></script>
-
+    <script src="../js/modal.js"></script>
 	</body>
 </html>

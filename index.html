@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="assets/css/slick-theme.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/fm.revealator.jquery.css">
+    <link rel="stylesheet" href="assets/css/modal.css">
         <!-- Yandex.Metrika counter -->
     <script type="text/javascript" >
       (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
@@ -74,7 +75,8 @@
     </nav>
     <!-- END nav -->
 
-    <section class="pb_cover_v1 text-left cover-bg-black cover-bg-opacity-4" style="background-image: url(assets/images/denim1.webp)" id="section-home">
+    <section class="pb_cover_v1 text-left cover-bg-black cover-bg-opacity-4" style="background-image: url(assets/images/denim1.webp); transform: scale(1);
+    animation: pulse 15s ease-in-out infinite;" id="section-home">
       <div class="container">
         <div class="row align-items-center justify-content-end">
           <div class="logo-main-animate"><img src="assets/images/logo-grey.webp" alt="logo-main" class="logo-icon-main"></div>
@@ -87,7 +89,7 @@
               <li class="advantages__li"><img class="logo-icon-animate" src="assets/images/logo-icon.webp" alt="logo-icon"><p class="commercial_proposal">Гарантии обоснованного прогноза благополучного исхода дела фиксируем в договоре</p></li>
               <li class="advantages__li"><img class="logo-icon-animate" src="assets/images/logo-icon.webp" alt="logo-icon"><p class="commercial_proposal">Результат от 1 недели<br>Используем ключевые показатели эффективности и четкие сроки</p></li>
             </ul>
-            <p><a href="#section-contact" role="button" class="btn smoothscroll pb_outline-light btn-xl pb_font-13 p-4 rounded-0 pb_letter-spacing-2">Заказать</a></p>
+            <p><a href="" role="button" data-modal="#modal2" class="btn smoothscroll pb_outline-light btn-xl pb_font-13 p-4 rounded-0 pb_letter-spacing-2 modal__trigger">Заказать</a></p>
             </div>
             
           </div>  
@@ -96,6 +98,46 @@
     </section>
     <!-- END section -->
     
+    <!-- modal window -->
+    <div id="modal2" class="modal modal--align-top modal__bg" role="dialog" aria-hidden="true">
+      <div class="modal__dialog">
+        <div class="modal__content">
+          <!-- <h1>Big Modal</h1> -->
+          <h3>Форма для отправки</h3>
+          
+            
+              <div class="form-group revealator-slideright revealator-delay1">
+                <label for="name">Ф И О</label>
+                <input type="text" class="form-control p-3 rounded-0" id="name"/>
+              </div>
+            
+              <div class="form-group revealator-slideright revealator-delay2">
+                <label for="email">Email</label>
+                <input type="text" class="form-control p-3 rounded-0" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"/>
+              </div>
+            
+              <div class="form-group revealator-slideright revealator-delay3">
+                <label for="email">Телефон</label>
+                <input type="text" class="form-control p-3 rounded-0" id="phone" pattern="[0-9]{11,}"/>
+              </div>
+            
+            <div class="form-group">
+              <input type="checkbox" id="privacy-policy" checked>Согласен(-на) с <a href="assets/pages/privacy-policy.html">политикой обработки персональных данных</a><br>
+              <input type="submit" class="btn pb_outline-dark pb_font-13 pb_letter-spacing-2 p-3 rounded-0 modal__close" value="Отправить" onclick="sendMail()">
+            </div>
+          
+          <!-- <p>Selfies normcore four dollar toast four loko listicle artisan. Hoodie Marfa authentic, wayfarers church-key tofu Banksy pop-up Kickstarter Brooklyn heirloom swag synth. Echo Park cray synth mixtape. Tofu gastropub squid readymade, trust fund Wes Anderson DIY PBR 8-bit try-hard +1 Shoreditch lo-fi tote bag.</p>
+          <p><img src="http://unsplash.it/600/300" style="max-width: 100%;" alt="" /></p>
+          <p>Mumblecore cred selfies fingerstache. Tousled skateboard plaid lo-fi shabby chic salvia, swag Odd Future Etsy art party Austin cronut. Crucifix whatever Pinterest food truck, pickled viral cray 90's DIY chambray keffiyeh biodiesel Vice blog. Cred meh yr tofu.</p>
+          <p>Mumblecore cred selfies fingerstache. Tousled skateboard plaid lo-fi shabby chic salvia, swag Odd Future Etsy art party Austin cronut. Crucifix whatever Pinterest food truck, pickled viral cray 90's DIY chambray keffiyeh biodiesel Vice blog. Cred meh yr tofu.</p> -->
+          <!-- modal close button -->
+          <a href="" class="modal__close demo-close">
+            <svg class="" viewBox="0 0 24 24"><path d="M19 6.41l-1.41-1.41-5.59 5.59-5.59-5.59-1.41 1.41 5.59 5.59-5.59 5.59 1.41 1.41 5.59-5.59 5.59 5.59 1.41-1.41-5.59-5.59z"/><path d="M0 0h24v24h-24z" fill="none"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- END modal window -->
     
     <section class="pb_section pb_section_v1" data-section="about" id="section-about">
       <div class="container">
@@ -691,5 +733,6 @@
     <script src="assets/js/sendmail.js"></script>
     <script src="assets/js/smtp.js"></script>
     <script src="assets/js/fm.revealator.jquery.js"></script>
+    <script src="assets/js/modal.js"></script>
 	</body>
 </html>
